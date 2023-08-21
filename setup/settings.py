@@ -40,8 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'galeria.apps.GaleriaConfig',
-    'usuarios.apps.UsuariosConfig',
+    'apps.galeria.apps.GaleriaConfig',
+    'apps.usuarios.apps.UsuariosConfig',
 ]
 
 MIDDLEWARE = [
@@ -116,6 +116,30 @@ USE_I18N = True
 
 USE_TZ = True
 
+
+#AWS CONFIGURAÇÃO - VARIAVEIS GLOBAIS
+
+AWS_ACCESS_KEY_ID = 'AKIA23P5TRQ3KHOJPW4E'
+
+AWS_SECRET_ACCESS_KEY = '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'
+
+AWS_STORAGE_BUCKET_NAME = 'fotografias-alura-space-sender'
+
+AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
+
+AWS_DEFAULT_ACL = 'public-read'
+
+AWS_S3_OBJECT_PARAMETERS = {
+    'CacheControl': 'max-age=86400'
+}
+
+AWS_LOCATION = 'static'
+
+AWS_QUERYSTRING_AUTH = False
+
+AWS_HEADERS = {
+    'Acess-Control-Allow_Origin': '*',
+}
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
