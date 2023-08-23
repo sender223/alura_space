@@ -1,0 +1,7 @@
+SECRET_KEY = 'i-@=6u%qi2*d9vg-3s4vmb2lxb4)4mgb^b7^xj2x@do$7j(e#t'
+
+AWS_ACCESS_KEY_ID = 'AKIA23P5TRQ3JM5JBNMC'
+
+AWS_SECRET_ACCESS_KEY = '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'
+
+AWS_STORAGE_BUCKET_NAME = 'fotografias-alura-space-sender'

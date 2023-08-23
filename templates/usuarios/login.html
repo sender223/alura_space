@@ -1,6 +1,7 @@
 {% extends 'shared/base.html' %}
 {% load static %}
-{% block content %} 
+{% block content %}
+
             <section class="galeria" style="margin-left: 5em">
                 <form action="{% url 'login' %}" method="POST">
                     {% csrf_token %}
@@ -13,11 +14,12 @@
                         {% endfor %}
                     </div>
                     <div>
-                        <button class="btn btn-success col-12" style="padding: top 5px;" type="submit">Logar</button>
+                        <button type="submit" class="btn btn-success col-12" style="padding: top 5px;">Logar</button>
                     </div>
                 </form>
             </section>
         </main>
     </div>
 </body>
+
 {% endblock %}
